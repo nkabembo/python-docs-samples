@@ -26,6 +26,11 @@ app = Flask(__name__)
 def hello():
     """Return a friendly HTTP greeting."""
     return 'Hello World!, Welcome to 360'
+	
+@app.route('/about')
+def newpage():
+    """Return a friendly HTTP greeting."""
+    return 'This is the about page!'
 
 
 if __name__ == '__main__':
